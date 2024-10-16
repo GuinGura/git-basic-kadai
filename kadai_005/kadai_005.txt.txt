@@ -1,0 +1,56 @@
+PS C:\Users\Yuma\git_tutorial> cd C:\Users\Yuma\task
+PS C:\Users\Yuma\task> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\Yuma\task
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/10/16     15:27                git_challenge
+
+
+PS C:\Users\Yuma\task\git_challenge> dir
+
+
+    ディレクトリ: C:\Users\Yuma\task\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/10/16     15:44              0 hello_world.txt.txt
+
+
+PS C:\Users\Yuma\task\git_challenge> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Yuma\task\git_challenge> git add hello_world.txt.txt
+PS C:\Users\Yuma\task\git_challenge> git commit -m "added first line"
+[main (root-commit) d618b25] added first line
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt.txt
+PS C:\Users\Yuma\task\git_challenge> echo "こんにちは！" >> hello_world.txt.txt
+PS C:\Users\Yuma\task\git_challenge> git add hello_world.txt.txt
+PS C:\Users\Yuma\task\git_challenge> git commit -m "added second line"
+[main 733bcf7] added second line
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Yuma\task\git_challenge> git log --oneline
+733bcf7 (HEAD -> main) added second line
+d618b25 added first line
+PS C:\Users\Yuma\task\git_challenge> cd C:\Users\Yuma\task
+PS C:\Users\Yuma\task> mkdir kadai_005
+
+
+    ディレクトリ: C:\Users\Yuma\task
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/10/16     15:57                kadai_005
