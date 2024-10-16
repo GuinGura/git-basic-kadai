@@ -1,0 +1,52 @@
+PS C:\Users\Yuma\git_tutorial> cd C:\Users\Yuma\task2
+PS C:\Users\Yuma\task2> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\Yuma\task2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/10/16     20:55                git_challenge
+
+
+PS C:\Users\Yuma\task2> cd git_challenge
+PS C:\Users\Yuma\task2\git_challenge> git init
+Initialized empty Git repository in C:/Users/Yuma/task2/git_challenge/.git/
+PS C:\Users\Yuma\task2\git_challenge> git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\Yuma\task2\git_challenge> echo "Hello, World!" > hello_world.txt
+PS C:\Users\Yuma\task2\git_challenge> ls 
+
+
+    ディレクトリ: C:\Users\Yuma\task2\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/10/16     20:57             32 hello_world.txt
+
+
+PS C:\Users\Yuma\task2\git_challenge> cat hello_world.txt
+Hello, World!
+PS C:\Users\Yuma\task2\git_challenge> git add hello_world.txt
+PS C:\Users\Yuma\task2\git_challenge> git commit -m "add hello_world.txt"
+[main (root-commit) 21f02e9] add hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\Yuma\task2\git_challenge> echo "こんにちは、世界！" > hello_world.txt
+PS C:\Users\Yuma\task2\git_challenge> cat hello_world.txt
+こんにちは、世界！
+PS C:\Users\Yuma\task2\git_challenge> git add hello_world.txt
+PS C:\Users\Yuma\task2\git_challenge> git commit -m "add hello_world.txt"
+[main bbcb7bf] add hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Yuma\task2\git_challenge> git log --online hello_world.txt
+fatal: unrecognized argument: --online
+PS C:\Users\Yuma\task2\git_challenge> git log --oneline hello_world.txt
+bbcb7bf (HEAD -> main) add hello_world.txt
+21f02e9 add hello_world.txt
